@@ -51,9 +51,13 @@ def Header():
 
 # Read scores from a written file. Team names and scores are separated by a length of 5 asterisks.
 def ReadScores():
+
+    event_title = ''
+
     scorelist = []
     totalscores = []
     with open(scfile, 'r') as data:
+        event_title = data.readline()
         for line in data:
             # Separate the team names and scores and convert the scores into numbers.
             l = line.split('*****') # Unique separator for teams and scores
@@ -77,9 +81,9 @@ def ReadScores():
                     scorelist[i] = scorelist[i-1]
                     scorelist[i-1] = teamswp
 
-
-
-    print (totalscores)
+    print()
+    print("Event:", event_title)
+    print(totalscores)
     #for i in range(len(totalscores)):
     #    s = totalscores[i]
     #    teamorder.append(totalscores.index(s, i))
@@ -92,7 +96,7 @@ def ReadScores():
     #scorelist[-1] = c
     print(scorelist)
 
-    return scorelist
+    return event_title, scorelist
 
 # Write the scores for individual rounds in HTML
 def WriteScores(scores):
@@ -269,17 +273,18 @@ def PodiumHoriz(i,j, totals):
         return " color:#fff8e7"
 
 
-scores = ReadScores()
+event_title, scores = ReadScores()
 #------------------------------------------------------------------------
 # Write the HTML script.
 with open("index.html", 'w') as data:
+    
     Header()
 
     #Set background and text colors, font
     data.write("<body>\n")
     # data.write(indent+"<img src=\"AoTLogo.png\">\n")
     #data.write(indent+"<h1 style=\"font-size:60px; text-align:center\">Astronomy on Tap Scoreboard</h1>\n")
-    data.write(indent+"<h1 class=\"eventtitle\">Astronomy on Tap - Universe in a Box</h1>\n")
+    data.write(indent+"<h1 class=\"eventtitle\">Astronomy on Tap - {}</h1>\n".format(event_title))
     data.write(indent+"<hr>\n")
     data.write(indent+"<div style=\"overflow-x: auto;\">\n")
     data.write(indent+"<table>\n")
