@@ -113,5 +113,6 @@ function sortTable() {
 }
 
 scoreboard();
+
 tableSum();
 sortTable();
