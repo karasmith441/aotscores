@@ -21,25 +21,29 @@ function addTeam(table, team_name, scores)
     if(i > 0)
     {
       cell.innerHTML = scores[i-1];
-    }
-    if(col_names[i].innerHTML === "HT")
-    {
-      cell.setAttribute("class", "bigquestion");
-      cell.innerHTML = scores[i-1];
-    }
-    if(col_names[i].innerHTML === "Final")
-    {
-      if(scores[i-1] < 0)
+      if(Number(cell.innerHTML) < 0)
       {
-        cell.setAttribute("class", "bigquestion missed");
-        cell.innerHTML = scores[i-1];
-      }
-      else
-      {
-        cell.setAttribute("class", "bigquestion");
-        cell.innerHTML = scores[i-1];
+        cell.style = "color:crimson";
       }
     }
+    // if(col_names[i].innerHTML === "HT")
+    // {
+    //   cell.setAttribute("class", "bigquestion");
+    //   cell.innerHTML = scores[i-1];
+    // }
+    // if(col_names[i].innerHTML === "Final")
+    // {
+    //   if(scores[i-1] < 0)
+    //   {
+    //     cell.setAttribute("class", "bigquestion missed");
+    //     cell.innerHTML = scores[i-1];
+    //   }
+    //   else
+    //   {
+    //     cell.setAttribute("class", "bigquestion");
+    //     cell.innerHTML = scores[i-1];
+    //   }
+    // }
     if(i == cols-1)
     {
       cell.setAttribute("class", "final");
@@ -122,6 +126,6 @@ makeTitle("Next Event Title");
 addTeam(table, "Team 1", [5,5,5,0,0,0]);
 addTeam(table, "Team 2", [0,0,0,0,0,0]);
 addTeam(table, "Team 3", [2,3,4,0,0,0]);
-addTeam(table, "Team 4", [1,1,1,0,0,0]);
+addTeam(table, "Team 4", [1,-1,-1,0,0,0]);
 tableSum(table);
 sortTable(table);
