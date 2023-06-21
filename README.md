@@ -3,13 +3,22 @@ Scoreboard for Astronomy on Tap Las Vegas.
 
 ## Basic Usage
 
-This is a Github Pages website that displays the scoreboard for Astronomy on Tap Las Vegas.  The scoreboard is modified using the file `scores.js`. You can use the following functions to modify the scoreboard but calling them in the `scoreboard()` function of `scores.js`.
+This is a Github Pages website that displays the scoreboard for Astronomy on Tap Las Vegas. In order to make the changes show up on the website, you 
 
-**setTitle(title)** - This function takes in a string (e.g. "Space is Cool") and set the title of the scoreboard to `Astronomy on Tap - {title}`
+1. Edit scores.js directly on GitHub
+2. Commit changes (big green button).
+ 
+You can watch the deployment progress in the `Actions` tab to make sure it deploys smoothly. The site is https://karasmith441.github.io/aotscores/. If you already have it open, it usually needs a hard refresh (ctrl+shift+R) to show the updates.
 
-**addTeam(team_name, scores)** - This function takes a string and a list of numbers (e.g. [1,2,3]). This adds a row for the specified team with the given scores. *Note: scores will be automatically padded so you don't need to add any extra 0's on the end; if it's round 3, your scores lists should just be 3 entries long.*
+## Editing scores.js
 
-The order in which you call the functions doesn't matter, the `main.js` will take care of ordering everything properly, but this is javascript so remember **semi-colons after EVERY COMMAND.** Here is an example of how `scores.js` might look after Half-Time:
+You can use the following functions to modify the scoreboard by adding them to the `scoreboard()` function in `scores.js`.
+
+**setTitle(title)** - Takes in a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`
+
+**addTeam(team_name, scores)** - Takes a string and a list of numbers (e.g. "Rocket Man", [1,2,3]). This adds a row for the specified team with the given scores. *Note: scores will be automatically padded so you don't need to add any extra 0's on the end; if it's round 3, your scores lists should just be 3 entries long.*
+
+The order in which you call the functions doesn't matter,`main.js` takes care of ordering everything properly, but this is javascript so remember **semi-colons after EVERY command.** Here is an example of how `scores.js` might look after Half-Time:
 
 ```
 function scoreboard(){
