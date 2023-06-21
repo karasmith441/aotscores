@@ -115,10 +115,10 @@ function sortTable(table) {
   }
 }
 table = document.getElementById("mytable");
-addRow(table, "Team 1", [5,4,0,0,0,0]);
-addRow(table, "Team 2", [4,4,0,0,0,0]);
-addRow(table, "Team 3", [5,5,0,0,0,0]);
-addRow(table, "Team 4", [2,3,0,0,0,0]);
-addRow(table, "Team 5", [3,1,0,0,0,0]);
+addRow(table, "Team 1", [5,4,5,0,0,0]);
+addRow(table, "Team 2", [4,4,2,0,0,0]);
+addRow(table, "Team 3", [5,5,3,0,0,0]);
+addRow(table, "Team 4", [2,3,5,0,0,0]);
+addRow(table, "Team 5", [3,1,2,0,0,0]);
 tableSum(table);
 sortTable(table);
