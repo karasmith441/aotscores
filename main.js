@@ -1,14 +1,18 @@
-function addRow(table, team_name, scores)
+function makeTitle(event_name)
+{
+  title = document.getElementById("eventtitle");
+  title.innerHTML = "Astronomy on Tap - " + event_name;
+}
+function addTeam(table, team_name, scores)
 {
   var rows = table.rows;
-  //var cols = rows[0].getElementsByTagName("TH").length;
   var col_names = rows[0].getElementsByTagName("TH");
   var cols = col_names.length;
-
-	var row = table.insertRow(table.rows.length);
+  
+  var row = table.insertRow(table.rows.length);
   for(i = 0; i < cols; i++)
-	{
-		var cell = row.insertCell(i);
+  {
+    var cell = row.insertCell(i);
     if(i == 0)
     {
       cell.setAttribute("class", "team");
@@ -41,12 +45,10 @@ function addRow(table, team_name, scores)
       cell.setAttribute("class", "final");
       cell.innerHTML = "";
     }
-	}
-	//row.getElementsByTagName("TD")[0].innerHTML = 1000;
+  }
 }
+
 function tableSum(table){
-  
-  //table = document.getElementById("mytable");
   rows = table.rows;
   for(i = 1; i < rows.length; i++)
   {
@@ -59,9 +61,9 @@ function tableSum(table){
   	row[row.length-1].innerHTML = tot;
   }
 }
+
 function sortTable(table) {
   var table, rows, switching, i, x, y, shouldSwitch;
-  //table = document.getElementById("mytable");
   switching = true;
   /* Make a loop that will continue until
   no switching has been done: */
@@ -115,10 +117,12 @@ function sortTable(table) {
   }
 }
 table = document.getElementById("mytable");
-addRow(table, "Team 1", [5,4,5,0,0,0]);
-addRow(table, "Team 2", [4,4,2,0,0,0]);
-addRow(table, "Team 3", [5,5,3,0,0,0]);
-addRow(table, "Team 4", [2,3,5,0,0,0]);
-addRow(table, "Team 5", [3,1,2,0,0,0]);
+
+makeTitle("Journey to the Center of the Earth");
+addTeam(table, "Team 1", [5,4,5,0,0,0]);
+addTeam(table, "Team 2", [4,4,2,0,0,0]);
+addTeam(table, "Team 3", [5,5,3,0,0,0]);
+addTeam(table, "Team 4", [2,3,5,0,0,0]);
+addTeam(table, "Team 5", [3,1,2,0,0,0]);
 tableSum(table);
 sortTable(table);
