@@ -1,6 +1,52 @@
-function tableSum(){
+function addRow(table, team_name, scores)
+{
+  var rows = table.rows;
+  //var cols = rows[0].getElementsByTagName("TH").length;
+  var col_names = rows[0].getElementsByTagName("TH");
+  var cols = col_names.length;
+
+	var row = table.insertRow(table.rows.length);
+  for(i = 0; i < cols; i++)
+	{
+		var cell = row.insertCell(i);
+    if(i == 0)
+    {
+      cell.setAttribute("class", "team");
+      cell.innerHTML = team_name;
+    }
+    if(i > 0)
+    {
+      cell.innerHTML = scores[i-1];
+    }
+    if(col_names[i].innerHTML === "HT")
+    {
+      cell.setAttribute("class", "bigquestion");
+      cell.innerHTML = scores[i-1];
+    }
+    if(col_names[i].innerHTML === "Final")
+    {
+      if(scores[i-1] < 0)
+      {
+        cell.setAttribute("class", "bigquestion missed");
+        cell.innerHTML = scores[i-1];
+      }
+      else
+      {
+        cell.setAttribute("class", "bigquestion");
+        cell.innerHTML = scores[i-1];
+      }
+    }
+    if(i == cols-1)
+    {
+      cell.setAttribute("class", "final");
+      cell.innerHTML = "";
+    }
+	}
+	//row.getElementsByTagName("TD")[0].innerHTML = 1000;
+}
+function tableSum(table){
   
-  table = document.getElementById("mytable");
+  //table = document.getElementById("mytable");
   rows = table.rows;
   for(i = 1; i < rows.length; i++)
   {
@@ -13,11 +59,9 @@ function tableSum(){
   	row[row.length-1].innerHTML = tot;
   }
 }
-
-function sortTable() {
-
+function sortTable(table) {
   var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("mytable");
+  //table = document.getElementById("mytable");
   switching = true;
   /* Make a loop that will continue until
   no switching has been done: */
@@ -70,5 +114,10 @@ function sortTable() {
   	t.style = styles[style_count];
   }
 }
-tableSum();
-sortTable();
+table = document.getElementById("mytable");
+addRow(table, "Team 1", [0,0,0,0,0,0]);
+addRow(table, "Team 2", [1,2,3,4,5,6]);
+addRow(table, "Team 3", [1,1,1,1,1,1]);
+addRow(table, "Team 4", [10,0,0,0,0,-10]);
+tableSum(table);
+sortTable(table);
