@@ -118,9 +118,10 @@ function sortTable(table) {
 }
 table = document.getElementById("mytable");
 
-makeTitle("Journey to the Center of the Earth");
+makeTitle("Next Event Title");
 addTeam(table, "Team 1", [5,5,5,0,0,0]);
 addTeam(table, "Team 2", [0,0,0,0,0,0]);
 addTeam(table, "Team 3", [2,3,4,0,0,0]);
+addTeam(table, "Team 4", [1,1,1,0,0,0]);
 tableSum(table);
 sortTable(table);
