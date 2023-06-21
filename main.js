@@ -1,14 +1,21 @@
-function makeTitle(event_name)
+function setTitle(event_name)
 {
   title = document.getElementById("eventtitle");
   title.innerHTML = "Astronomy on Tap - " + event_name;
 }
-function addTeam(table, team_name, scores)
+
+function addTeam(team_name, scores)
 {
+  table = document.getElementById("mytable");
   var rows = table.rows;
   var col_names = rows[0].getElementsByTagName("TH");
   var cols = col_names.length;
   
+  while(scores.length < cols)
+  {
+    scores.push(0);
+  }
+
   var row = table.insertRow(table.rows.length);
   for(i = 0; i < cols; i++)
   {
@@ -26,33 +33,15 @@ function addTeam(table, team_name, scores)
         cell.style = "color:crimson";
       }
     }
-    // if(col_names[i].innerHTML === "HT")
-    // {
-    //   cell.setAttribute("class", "bigquestion");
-    //   cell.innerHTML = scores[i-1];
-    // }
-    // if(col_names[i].innerHTML === "Final")
-    // {
-    //   if(scores[i-1] < 0)
-    //   {
-    //     cell.setAttribute("class", "bigquestion missed");
-    //     cell.innerHTML = scores[i-1];
-    //   }
-    //   else
-    //   {
-    //     cell.setAttribute("class", "bigquestion");
-    //     cell.innerHTML = scores[i-1];
-    //   }
-    // }
     if(i == cols-1)
     {
       cell.setAttribute("class", "final");
-      cell.innerHTML = "";
     }
   }
 }
 
-function tableSum(table){
+function tableSum(){
+  table = document.getElementById("mytable");
   rows = table.rows;
   for(i = 1; i < rows.length; i++)
   {
@@ -66,8 +55,10 @@ function tableSum(table){
   }
 }
 
-function sortTable(table) {
+function sortTable() {
+
   var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("mytable");
   switching = true;
   /* Make a loop that will continue until
   no switching has been done: */
@@ -120,12 +111,7 @@ function sortTable(table) {
   	t.style = styles[style_count];
   }
 }
-table = document.getElementById("mytable");
 
-makeTitle("Next Event Title");
-addTeam(table, "Team 1", [5,5,5,0,0,0]);
-addTeam(table, "Team 2", [0,0,0,0,0,0]);
-addTeam(table, "Team 3", [2,3,4,0,0,0]);
-addTeam(table, "Team 4", [1,-1,-1,0,0,0]);
-tableSum(table);
-sortTable(table);
+scoreboard();
+tableSum();
+sortTable();
