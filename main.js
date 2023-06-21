@@ -118,9 +118,9 @@ function sortTable(table) {
 }
 table = document.getElementById("mytable");
 
-makeTitle("Space is Better Than High Pressure");
-addTeam(table, "No Ash", [5,5,5,0,0,0]);
-addTeam(table, "Ash", [0,0,0,0,0,0]);
-addTeam(table, "Medium Ash", [2,3,4,0,0,0]);
+makeTitle("Journey to the Center of the Earth");
+addTeam(table, "Team 1", [5,5,5,0,0,0]);
+addTeam(table, "Team 2", [0,0,0,0,0,0]);
+addTeam(table, "Team 3", [2,3,4,0,0,0]);
 tableSum(table);
 sortTable(table);
