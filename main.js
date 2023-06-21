@@ -119,5 +119,6 @@ addRow(table, "Team 1", [0,0,0,0,0,0]);
 addRow(table, "Team 2", [1,2,3,4,5,6]);
 addRow(table, "Team 3", [1,1,1,1,1,1]);
 addRow(table, "Team 4", [10,0,0,0,0,-10]);
+addRow(table, "Team 5", [10,5,0,0,0,-10]);
 tableSum(table);
 sortTable(table);
