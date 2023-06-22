@@ -16,7 +16,7 @@ You can use the following functions to modify the scoreboard by adding them to t
 
 **setTitle(title)** - Takes in a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`
 
-**addTeam(team_name, scores)** - Takes a string and a list of numbers (e.g. "Rocket Man", [10,20,30]). This adds a row for the specified team with the given scores. *Note: rows will be automatically padded to fill the number of rounds, so you don't need to add any extra 0's on the end; e.g. if it's round 3, your scores lists should just be 3 entries long.*
+**addTeam(team_name, scores)** - Takes a string and a list of numbers (e.g. "Rocket Man", [10,20,30]). This adds a row for the specified team with the given scores. *Note: rows will be automatically padded to fill the number of rounds, so you don't need to add any extra 0's on the end of the list; e.g. if it's round 3, your scores lists should just be 3 entries long.*
 
 The order in which you call the functions doesn't matter,`main.js` takes care of ordering everything properly, but this is javascript so remember **semi-colons after EVERY command.** Here is an example of how `scores.js` might look after Half-Time:
 
