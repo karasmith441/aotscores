@@ -33,4 +33,4 @@ function scoreboard(){
 }
 ```
 
-If a team comes in late, just give them 0's for any rounds before they started answering questions (e.g. addTeam("Late Birds Get No Worms", [0,0,50]);).
+If a team comes in late, just give them 0's for any rounds before they started answering questions, e.g. addTeam("Late Birds Get No Worms", [0,0,50]);
