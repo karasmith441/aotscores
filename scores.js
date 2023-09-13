@@ -7,4 +7,5 @@ function scoreboard(){
 	addTeam("Major Tom", [50,50,40]);
 	addTeam("Zargothrax", [40,40,30]);
 	addTeam("Cosmic Brownies", [30, 50, 30]);
+	addTeam("Ford Prefect", [20,50,50]);
 }
