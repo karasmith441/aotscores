@@ -1,6 +1,6 @@
 function scoreboard(){
 	
-	setBackground("bg/gargantua.png");
+	setBackground("bg/hubble_ultra_deep_field.jpg");
 	setTitle("Where in the Universe is A'Tuin Going?");
 
 	addTeam("San Holo",        [40,30,50]);
