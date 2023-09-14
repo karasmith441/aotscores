@@ -14,6 +14,8 @@ You can watch the deployment progress in the `Actions` tab to make sure it deplo
 
 You can use the following functions to modify the scoreboard by adding them to the `scoreboard()` function in `scores.js`.
 
+**setBackground(img)** - Takes in a path to an image (e.g. "bg/space.png") and sets the background to be that image.
+
 **setTitle(title)** - Takes in a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`
 
 **addTeam(team_name, scores)** - Takes a string and a list of numbers (e.g. "Rocket Man", [10,20,30]). This adds a row for the specified team with the given scores. *Note: rows will be automatically padded to fill the number of rounds, so you don't need to add any extra 0's on the end of the list; e.g. if it's round 3, your scores lists should just be 3 entries long.*
@@ -23,13 +25,15 @@ The order in which you call the functions doesn't matter,`main.js` takes care of
 ```
 function scoreboard(){
 	
+	setBackground("bg/gargantua.png");
 	setTitle("Where in the Universe is A'Tuin Going?");
 
-	addTeam("San Holo", [40,40,50]);
-	addTeam("KHAAAAAAN!", [50,20,30]);
-	addTeam("Major Tom", [50,50,40]);
-	addTeam("Zargothrax", [40,40,30]);
-	addTeam("Cosmic Brownies", [30, 50, 30]);
+	addTeam("San Holo",        [40,30,50]);
+	addTeam("KHAAAAAAN!",      [50,20,30]);
+	addTeam("Major Tom",       [50,50,40]);
+	addTeam("Zargothrax",      [40,40,30]);
+	addTeam("Cosmic Brownies", [30,50,30]);
+	addTeam("Ford Prefect",    [20,50,50]);
 }
 ```
 
