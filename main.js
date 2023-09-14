@@ -10,7 +10,7 @@ function setBackground(url)
   document.body.style.backgroundImage = url_cast_str;
 }
 
-function addTeam(team_name, scores)
+function setTeamScores(team_name, scores)
 {
   table = document.getElementById("mytable");
   var rows = table.rows;
