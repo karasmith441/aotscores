@@ -14,7 +14,7 @@ You can watch the deployment progress in the `Actions` tab to make sure it deplo
 
 You can use the following functions to modify the scoreboard by adding them to the `scoreboard()` function in `scores.js`.
 
-**setBackground(img)** - Takes in a path to an image (e.g. "bg/space.png") and sets the background to be that image.
+**setBackground(path)** - Takes in a path to an image (e.g. "bg/space.png") and sets the background to be that image.
 
 **setTitle(title)** - Takes in a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`
 
