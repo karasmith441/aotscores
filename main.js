@@ -4,6 +4,12 @@ function setTitle(event_name)
   title.innerHTML = "Astronomy on Tap - " + event_name;
 }
 
+function setBackground(url)
+{
+  url_cast_str = "url(" + url + ")";
+  document.body.style.backgroundImage = url_cast_str;
+}
+
 function addTeam(team_name, scores)
 {
   table = document.getElementById("mytable");
@@ -113,6 +119,5 @@ function sortTable() {
 }
 
 scoreboard();
-
 tableSum();
 sortTable();

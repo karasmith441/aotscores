@@ -29,7 +29,7 @@ img {
 body {
     background-color:black;
     /* set background */
-    background-image: url("bg/diamond_anvil_800.jpg");
+    /* background-image: url("bg/diamond_anvil_800.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
