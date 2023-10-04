@@ -6,7 +6,7 @@ function scoreboard(){
 	setTeamScores("BIG BOIS",        	[20,20,40]);
 	setTeamScores("Double Doobles",        	[30,40,40]);
 	setTeamScores("Exoplanet Specterscopy", [50,40,40]);
-	setTeamScores("hbee Sycyzy",        	[ 0,40, 0]);
+	setTeamScores("hbee Sycyzy",        	[ 0,40,30]);
 	setTeamScores("Jupiter & IO",        	[20,40,40]);
 	setTeamScores("Nasa Hole",        	[20, 0,40]);
 	setTeamScores("Nom Nom",        	[10,50,50]);
