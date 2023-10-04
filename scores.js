@@ -1,7 +1,7 @@
 function scoreboard(){
 	
 	setBackground("bg/hubble_ultra_deep_field.jpg");
-	setTitle("Where in the Universe is A'Tuin Going?");
+	setTitle("VAR!");
 
 	setTeamScores("BIG BOIS",        				[20,]);
 	setTeamScores("Double Doobles",        				[30,]);
