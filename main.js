@@ -12,7 +12,7 @@ function setBackground(url)
   document.body.style.backgroundImage = url_cast_str;
 }
 
-function roundScores(i, round_scoring)
+function setRoundScores(i, round_scoring)
 {
   while(RSL.length <= i)
   {
