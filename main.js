@@ -16,7 +16,7 @@ function setScoreMultiplier(i, multiplier)
 {
   while(RSL.length <= i-1)
   {
-    RSL.push(1);
+    RSL.push(0);
   }
   RSL[i-1] = multiplier;
 }
