@@ -12,13 +12,13 @@ function setBackground(url)
   document.body.style.backgroundImage = url_cast_str;
 }
 
-function setRoundScores(i, round_scoring)
+function setRoundScoreMultiplier(i, multiplier)
 {
   while(RSL.length <= i-1)
   {
     RSL.push(1);
   }
-  RSL[i-1] = round_scoring;
+  RSL[i-1] = multiplier;
 }
 
 function setTeamScores(team_name, scores)
