@@ -2,8 +2,6 @@ function scoreboard(){
 	
 	setBackground("bg/hubble_ultra_deep_field.jpg");
 	setTitle("VAR!");
-
-	setRoundScores(5, 10);
 	
 	setTeamScores("Ahbee Sycyzy",        	[0,4,3,0,3,"-0"]);
 	setTeamScores("BIG BOIS",        	[2,2,4,3,7,-210]);
@@ -17,4 +15,6 @@ function scoreboard(){
 	setTeamScores("Team Bing",        	[2,3,5,5,6,-260]);
 	setTeamScores("The Brown Dwarves",	[3,4,3,3,8,-240]);
 	setTeamScores("Variable Stars Give Me a Redshift in my Pants", [3,4,5,3,7,-181]);
+
+	setScoreMultiplier(5, 10);
 }
