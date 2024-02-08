@@ -14,11 +14,11 @@ function setBackground(url)
 
 function setScoreMultiplier(i, multiplier)
 {
-  while(RSL.length <= i-1)
+  while(RSL.length <= i)
   {
     RSL.push(0);
   }
-  RSL[i-1] = multiplier;
+  RSL[i] = multiplier;
 }
 
 function setTeamScores(team_name, scores)
