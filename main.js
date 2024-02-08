@@ -44,15 +44,16 @@ function setTeamScores(team_name, scores)
     }
     if(i > 0)
     {
-      cell.innerHTML = RSL[i-1]*scores[i-1];
-      if(Number(cell.innerHTML) < 0)
-      {
-        cell.style = "color:crimson";
-      }
-      
       if(cell.innerHTML === "-0")
       {
         cell.style = "color:crimson";
+      }
+      else{
+        cell.innerHTML = RSL[i-1]*scores[i-1];
+        if(Number(cell.innerHTML) < 0)
+        {
+          cell.style = "color:crimson";
+        }
       }
     }
     if(i == cols-1)
