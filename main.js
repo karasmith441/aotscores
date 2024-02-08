@@ -14,11 +14,11 @@ function setBackground(url)
 
 function setRoundScores(i, round_scoring)
 {
-  while(RSL.length <= i)
+  while(RSL.length <= i-1)
   {
     RSL.push(1);
   }
-  RSL[i] = round_scoring;
+  RSL[i-1] = round_scoring;
 }
 
 function setTeamScores(team_name, scores)
