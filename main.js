@@ -33,7 +33,19 @@ function setTeamScores(team_name, scores)
     }
     if(i > 0)
     {
-      cell.innerHTML = scores[i-1];
+      if(i == 1 || i == 2 || i == 3)
+      {
+        cell.innerHTML = 10*scores[i-1];
+      }
+      if(i == 4 || i == 5)
+      {
+        cell.innerHTML = 20*scores[i-1];
+      }
+      if(i == 6)
+      {
+        cell.innerHTML = scores[i-1];
+      }
+
       if(Number(cell.innerHTML) < 0)
       {
         cell.style = "color:crimson";
