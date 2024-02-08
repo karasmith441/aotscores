@@ -1,7 +1,7 @@
 function scoreboard(){
 	
 	setBackground("bg/hubble_ultra_deep_field.jpg");
-	setTitle("VAR!");
+	setTitle("VAR!\nAttendance 24");
 
 	setTeamScores("Ahbee Sycyzy",        	[ 0,40,30,  0, 30,"-0"]);
 	setTeamScores("BIG BOIS",        	[20,20,40, 60, 70,-210]);
