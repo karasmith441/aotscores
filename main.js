@@ -12,7 +12,7 @@ function setBackground(url)
   document.body.style.backgroundImage = url_cast_str;
 }
 
-function setRoundScoreMultiplier(i, multiplier)
+function setScoreMultiplier(i, multiplier)
 {
   while(RSL.length <= i-1)
   {
