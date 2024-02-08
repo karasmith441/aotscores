@@ -46,6 +46,7 @@ function setTeamScores(team_name, scores)
     {
       if(cell.innerHTML === "-0")
       {
+        cell.innerHTML = "-0";
         cell.style = "color:crimson";
       }
       else{
