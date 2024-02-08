@@ -16,5 +16,5 @@ function scoreboard(){
 	setTeamScores("The Brown Dwarves",	[3,4,3,3,8,-240]);
 	setTeamScores("Variable Stars Give Me a Redshift in my Pants", [3,4,5,3,7,-181]);
 
-	setScoreMultiplier(5, 10);
+	setScoreMultiplier(4, 10);
 }
