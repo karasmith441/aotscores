@@ -1,3 +1,5 @@
+var RSL = [10,10,10,20,20,1];
+
 function setTitle(event_name)
 {
   title = document.getElementById("eventtitle");
@@ -8,6 +10,15 @@ function setBackground(url)
 {
   url_cast_str = "url(" + url + ")";
   document.body.style.backgroundImage = url_cast_str;
+}
+
+function roundScores(i, round_scoring)
+{
+  while(RSL.length <= i)
+  {
+    RSL.push(1);
+  }
+  RSL[i] = round_scoring;
 }
 
 function setTeamScores(team_name, scores)
@@ -33,19 +44,7 @@ function setTeamScores(team_name, scores)
     }
     if(i > 0)
     {
-      if(i == 1 || i == 2 || i == 3)
-      {
-        cell.innerHTML = 10*scores[i-1];
-      }
-      if(i == 4 || i == 5)
-      {
-        cell.innerHTML = 20*scores[i-1];
-      }
-      if(i == 6)
-      {
-        cell.innerHTML = scores[i-1];
-      }
-
+      cell.innerHTML = RSL[i-1]*scores[i-1];
       if(Number(cell.innerHTML) < 0)
       {
         cell.style = "color:crimson";
