@@ -1,6 +1,6 @@
 var RSL = [10,10,10,20,20,1];
 
-function setTitle(event_name, dash=True)
+function setTitle(event_name, dash=true)
 {
   title = document.getElementById("eventtitle");
   text = "Astronomy on Tap "
