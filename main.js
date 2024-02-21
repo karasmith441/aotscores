@@ -1,9 +1,14 @@
 var RSL = [10,10,10,20,20,1];
 
-function setTitle(event_name)
+function setTitle(event_name, dash=True)
 {
   title = document.getElementById("eventtitle");
-  title.innerHTML = "Astronomy on Tap - " + event_name;
+  text = "Astronomy on Tap "
+  if(dash)
+  {
+    text += "- "
+  }
+  title.innerHTML = text + event_name;
 }
 
 function setBackground(url)
