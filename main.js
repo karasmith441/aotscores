@@ -1,4 +1,4 @@
-var RSL = [10,10,10,20,20,1];
+var SCORE_MULTIPLIERS = [10,10,10,20,20,1];
 
 function setTitle(event_name, dash=true)
 {
@@ -19,11 +19,11 @@ function setBackground(url)
 
 function setScoreMultiplier(i, multiplier)
 {
-  while(RSL.length <= i)
+  while(SCORE_MULTIPLIERS.length <= i)
   {
-    RSL.push(0);
+    SCORE_MULTIPLIERS.push(0);
   }
-  RSL[i] = multiplier;
+  SCORE_MULTIPLIERS[i] = multiplier;
 }
 
 function setTeamScores(team_name, scores)
