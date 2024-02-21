@@ -16,7 +16,7 @@ You can use the following functions to modify the scoreboard by adding them to t
 
 **setBackground(path)** - Takes a string path to an image (e.g. "bg/space.png") and sets the background to be that image.
 
-**setTitle(title)** - Takes a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`
+**setTitle(title)** - Takes a string (e.g. "Space is Cool") and sets the title of the scoreboard to `Astronomy on Tap - {title}`. There's an optional parameter if you do not want the dash in the middle add dash=false as a parameter.
 
 **setScoreMultiplier(round, multiplier)** - Takes two numbers, the first is the round number (starting from 0 and counting up, so these *will not* match the name of the round, sorry), the second is the score multiplier for that round. The defaults are 10, 10, 10, 20, 20, and 1 for rounds 0 through 5. This means you just put in the number correct for the first 5, then their wager for the final (+/- depending on if they got it or not), setTeamScores will do the math. You can change the default values by changing the variable RSL in main.js.
 
