@@ -9,8 +9,8 @@ function scoreboard(){
 	setScoreMultiplier(4, 5); 
 	
 	//setTeamScores("Team Name", []);
-	setTeamScores("Test Team 1", [0, 0, 0, 0, 2, 10]);
+	setTeamScores("Test Team 1", [0, 0, 0, 0, 2, +10]);
 	setTeamScores("Test Team 2", [0, 0, 0, 2, 0, "-0"]);
 	setTeamScores("Test Team 3", [0, 0, 0, 0, 0, -10]);
-	setTeamScores("Test Team 4", [1, 1, 3, 4, 2, 0]);
+	setTeamScores("Test Team 4", [1, 1, 3, 4, 2, +0]);
 }
