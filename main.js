@@ -55,7 +55,7 @@ function setTeamScores(team_name, scores)
         cell.style = "color:crimson";
       }
       else{
-        cell.innerHTML = RSL[i-1]*scores[i-1];
+        cell.innerHTML = SCORE_MULTIPLIERS[i-1]*scores[i-1];
         if(Number(cell.innerHTML) < 0)
         {
           cell.style = "color:crimson";
