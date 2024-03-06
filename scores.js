@@ -9,5 +9,17 @@ function scoreboard(){
 	setScoreMultiplier(4, 5); 
 	
 	//setTeamScores("Team Name", []);
-	setTeamScores("Test Team", [0]);
+	setTeamScores("Bio is Better", [1]);
+	setTeamScores("Rachel's Favorites", [1]);
+	setTeamScores("Pigeons", [1]);
+	setTeamScores("Blue Cruise Crew", [2]);
+	setTeamScores("Lord Taco", [3]);
+	setTeamScores("LV Away Team", [3]);
+	setTeamScores("Apes of Wrath", [4]);
+	setTeamScores("Solar Eclipse of the Heart", [1]);
+	setTeamScores("RMA Per Ant C.", [1]);
+	setTeamScores("Space Monkey Mafia", [1]);
+	setTeamScores("Subie", [3]);
+	setTeamScores("Nebulator", [3]);
+	setTeamScores("The Binary Stars", [2]);
 }
