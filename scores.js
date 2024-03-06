@@ -9,4 +9,5 @@ function scoreboard(){
 	setScoreMultiplier(4, 5); 
 	
 	//setTeamScores("Team Name", []);
+	setTeamScores("Test Team", [0]);
 }
