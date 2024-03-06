@@ -9,17 +9,17 @@ function scoreboard(){
 	setScoreMultiplier(4, 5); 
 	
 	//setTeamScores("Team Name", []);
-	setTeamScores("Bio is Better", [1, 5]);
-	setTeamScores("Rachel's Favorites", [1, 9]);
-	setTeamScores("Pigeons", [1, 7]);
-	setTeamScores("Blue Cruise Crew", [2, 5]);
-	setTeamScores("Lord Taco", [3, 9]);
-	setTeamScores("LV Away Team", [3, 9]);
-	setTeamScores("Apes of Wrath", [4, 9]);
-	setTeamScores("Solar Eclipse of the Heart", [1, 9]);
+	setTeamScores("Bio is Better", [1, 5, 3]);
+	setTeamScores("Rachel's Favorites", [1, 9, 3]);
+	setTeamScores("Pigeons", [1, 7, 4]);
+	setTeamScores("Blue Cruise Crew", [2, 5, 3]);
+	setTeamScores("Lord Taco", [3, 9, 4]);
+	setTeamScores("LV Away Team", [3, 9, 4]);
+	setTeamScores("Apes of Wrath", [4, 9, 4]);
+	setTeamScores("Solar Eclipse of the Heart", [1, 9, 4]);
 	setTeamScores("RMA Per Ant C.", [1, 5]);
-	setTeamScores("Space Monkey Mafia", [1, 8]);
+	setTeamScores("Space Monkey Mafia", [1, 8, 4]);
 	setTeamScores("Subie", [3, 8]);
-	setTeamScores("Nebulator", [3, 9]);
-	setTeamScores("The Binary Stars", [2, 8]);
+	setTeamScores("Nebulator", [3, 9, 4]);
+	setTeamScores("The Binary Stars", [2, 8, 3]);
 }
