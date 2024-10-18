@@ -8,10 +8,11 @@ function scoreboard(){
 
 	//setTeamScores("Team Name", []);
 	
-	setTeamScores("San Holo",        [4,3,5]);
-	setTeamScores("KHAAAAAAN!",      [5,2,3]);
-	setTeamScores("Major Tom",       [5,5,4]);
-	setTeamScores("Zargothrax",      [4,4,3]);
-	setTeamScores("Cosmic Brownies", [3,5,3]);
-	setTeamScores("Ford Prefect",    [2,5,5]);
+	setTeamScores("Big Badda Boom", [2]);
+	setTeamScores("Flat Earthers", [2]);
+	setTeamScores("Kepler's Garter Belt", [3]);
+	setTeamScores("Leads Lab", [3]);
+	setTeamScores("Q", [2]);
+	setTeamScores("Sportaco", [0]);
+	setTeamScores("Staiden", [3]);
 }
