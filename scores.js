@@ -8,11 +8,11 @@ function scoreboard(){
 
 	//setTeamScores("Team Name", []);
 	
-	setTeamScores("Big Badda Boom", [2, 3, 4]);
-	setTeamScores("Flat Earthers", [2, 3, 3]);
-	setTeamScores("Kepler's Garter Belt", [3, 3, 3]);
-	setTeamScores("Leads Lab", [3, 4, 4]);
-	setTeamScores("Q", [2, 5, 4]);
-	setTeamScores("Sportaco", [0, 2, 2]);
-	setTeamScores("Staiden", [3, 5, 4]);
+	setTeamScores("Big Badda Boom",       [2, 3, 4, 0,  4]);
+	setTeamScores("Flat Earthers", 	      [2, 3, 3, 3, 10]);
+	setTeamScores("Kepler's Garter Belt", [3, 3, 3, 2, 16]);
+	setTeamScores("Leads Lab", 	      [3, 4, 4, 3, 16]);
+	setTeamScores("Q", 		      [2, 5, 4, 4, 13]);
+	setTeamScores("Sportaco", 	      [0, 2, 2, 1,  5]);
+	setTeamScores("Stayden", 	      [3, 5, 4, 4,  5]);
 }
