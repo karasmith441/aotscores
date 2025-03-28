@@ -8,16 +8,16 @@ function scoreboard(){
 
 	//setTeamScores("", []);
 	
-	setTeamScores("Astrofreakycists", 		[5, 4, 4, 2, 4]);
-	setTeamScores("Deadweight", 			[3, 3, 5, 2, 7]);
-	setTeamScores("Ecologists", 			[5, 3, 3, 3, 4]);
-	setTeamScores("Kelly", 				[1, 1, 4, 2, 1])
-	setTeamScores("Leads Lab", 			[1, 5, 4, 4, 0])
-	setTeamScores("Nasa, Now for Sale on Ebay", 	[4, 5, 4, 5, 2])
-	setTeamScores("No Means No", 			[4, 2, 3, 2, 20])
-	setTeamScores("Space Cats", 			[5, 3, 4, 2, 1])
-	setTeamScores("The Lone Gunman", 		[1, 1, 3, 0, 1])
-	setTeamScores("Universe in a Tube", 		[4, 2, 4, 3, 12])
+	setTeamScores("Astrofreakycists", 		[5, 4, 4, 2, 4, -190]);
+	setTeamScores("Deadweight", 			[3, 3, 5, 2, 7, -185]);
+	setTeamScores("Ecologists", 			[5, 3, 3, 3, 4, -55]);
+	setTeamScores("Kelly", 				[1, 1, 4, 2, 1, -105])
+	setTeamScores("Leads Lab", 			[1, 5, 4, 4, 0, -100])
+	setTeamScores("Nasa, Now for Sale on Ebay", 	[4, 5, 4, 5, 2, -9])
+	setTeamScores("No Means No", 			[4, 2, 3, 2, 20, -10])
+	setTeamScores("Space Cats", 			[5, 3, 4, 2, 1, -123])
+	setTeamScores("The Lone Gunman", 		[1, 1, 3, 0, 1, -55])
+	setTeamScores("Universe in a Tube", 		[4, 2, 4, 3, 12, -21])
 	
 	
 
