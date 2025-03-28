@@ -8,16 +8,16 @@ function scoreboard(){
 
 	//setTeamScores("", []);
 	
-	setTeamScores("Astrofreakycists", [5]);
-	setTeamScores("Deadweight", [3]);
-	setTeamScores("Ecologists", [5]);
-	setTeamScores("Kelly", [1])
-	setTeamScores("Leads Lab", [1])
-	setTeamScores("Nasa, Now for Sale on Ebay", [4])
-	setTeamScores("No Means No \"No Mean No\"", [4])
-	setTeamScores("Space Cats", [5])
-	setTeamScores("The Lone Gonman", [1])
-	setTeamScores("Universe in a Tube", [4])
+	setTeamScores("Astrofreakycists", [5, 4]);
+	setTeamScores("Deadweight", [3, 3]);
+	setTeamScores("Ecologists", [5, 3]);
+	setTeamScores("Kelly", [1, 1])
+	setTeamScores("Leads Lab", [1, 5])
+	setTeamScores("Nasa, Now for Sale on Ebay", [4, 5])
+	setTeamScores("No Means No", [4, 2])
+	setTeamScores("Space Cats", [5, 3])
+	setTeamScores("The Lone Gunman", [1, 1])
+	setTeamScores("Universe in a Tube", [4, 2])
 	
 	
 
